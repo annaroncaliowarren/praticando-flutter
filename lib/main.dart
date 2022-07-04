@@ -18,14 +18,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<String> listImages = [
-      'https://cdn.pixabay.com/photo/2022/06/27/08/37/lotus-7287044_960_720.jpg',
-      'https://cdn.pixabay.com/photo/2022/06/21/07/50/dogs-7275314_960_720.jpg',
-      'https://cdn.pixabay.com/photo/2022/04/18/15/38/poppies-7140807_960_720.jpg'
-    ];
+    'https://cdn.pixabay.com/photo/2022/06/27/08/37/lotus-7287044_960_720.jpg',
+    'https://cdn.pixabay.com/photo/2022/06/21/07/50/dogs-7275314_960_720.jpg',
+    'https://cdn.pixabay.com/photo/2022/04/18/15/38/poppies-7140807_960_720.jpg'
+  ];
 
   changeImage() {
-    
-    for(int i = 0; i < listImages.length; i++){
+    for (int i = 0; i < listImages.length; i++) {
       Image.network(listImages[i]);
     }
   }
